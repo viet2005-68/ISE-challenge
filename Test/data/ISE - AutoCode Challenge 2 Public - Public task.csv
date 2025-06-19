@@ -115,3 +115,46 @@ Các chủ đề sau nằm trong danh sách sau:
        'rocket', 'man', 'tulip', 'lamp', 'seal', 'lion', 'butterfly',
        'kangaroo', 'television', 'ray', 'chair', 'skunk', 'trout',
        'possum', 'mouse']",Link
+6,"🐾 Story: Alice’s Magical Pet Photo Box
+Alice is an animal lover who adores collecting pictures of pets. In her room, she keeps a magical box filled with hundreds of photos of dogs and cats that she has taken or found from all over the internet.
+
+But there’s a little problem...
+
+Over time, Alice’s collection has gotten messy. Her box now contains a mix of dog photos, cat photos, and even some blurry or unrecognizable images. She needs a smart system to help her sort through the mess and organize everything again.
+
+🧠 Your Mission
+You’re building an intelligent system that can analyze each image in Alice’s magical box and decide what it contains. Each image will fall into one of the following categories:
+
+🐶 If the image contains dogs:
+
+There may be one or more dogs in the photo.
+
+Your system should detect all visible dogs, identify their breed, and return the most frequent breed in the image.
+
+🐱 If the image contains a single cat:
+
+Look at the cat’s facial expression and determine its most likely emotion — such as ""happy"", ""angry"", ""curious"", or ""relaxed"".
+
+❓ If the image is unclear (e.g., no visible pet or the view is too blurry):
+
+The system should simply return ""unsure"" to avoid making a wrong guess.
+
+📦 The Contents of Alice’s Box
+The images are stored in the following directory:
+
+images/
+
+Each image is in .jpg or .png format, typically containing a pet in the foreground.
+
+📝 Expected Output
+After processing, your system should save the result to file output.csv with format:
+
+id: the image filename without extension (e.g., 001.png → id = 001)
+
+prediction:
+
+    The most frequent dog breed (if dogs are present)
+
+    The cat’s emotion (if a single cat is present)
+
+    ""unsure"" (if the content is ambiguous or invalid)",Link

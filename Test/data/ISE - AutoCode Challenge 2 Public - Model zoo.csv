@@ -6,3 +6,5 @@ STT,Tên Model,Link model
 5,Phân loại gian lận thẻ tín dụng,https://huggingface.co/zhaospei/Model_4
 6,Phân loại hình ảnh,https://huggingface.co/zhaospei/Model_7
 7,"Phân loại hình ảnh thành 100 lớp đối tượng chi tiết (fine-grained),",https://huggingface.co/zhaospei/Model_6
+8,"Phân loại hình ảnh giống chó", https://huggingface.co/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit
+9,"Nhận diện cảm xúc mèo", https://huggingface.co/semihdervis/cat-emotion-classifier
