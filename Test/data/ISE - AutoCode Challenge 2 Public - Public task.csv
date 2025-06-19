@@ -1,0 +1,117 @@
+STT,Task,Validation data
+1,"""Bối cảnh của vấn đề:
+Nhận dạng chữ viết tay là một bài toán cơ bản trong lĩnh vực học máy và xử lý ảnh, với nhiều ứng dụng thực tiễn như nhận dạng chữ số trên phiếu khảo sát, hóa đơn hay bài thi tự động. Việc phân loại chữ số viết tay thành số nguyên tố hoặc không giúp mở rộng khả năng ứng dụng trong các bài toán toán học tự động, kiểm tra bài tập, hoặc các ứng dụng giáo dục.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một hệ thống có khả năng nhận diện chữ số viết tay từ ảnh và xác định xem số đó có phải là số nguyên tố hay không.
+Đầu vào là ảnh chứa một chữ số viết tay.
+Đầu ra là nhãn phân loại nhị phân: """"nguyên tố"""" hoặc """"không nguyên tố"""".
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một thư mục có tên là """"images"""" chứa các ảnh grayscale 28x28 pixel, mỗi ảnh chứa một chữ số viết tay từ 0 đến 9.
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi ảnh
+có các cột:
+file_name: tên file ảnh
+prediction: nhãn của ảnh:
+""""số nguyên tố"""" nếu số trong ảnh là số nguyên tố.
+""""không nguyên tố"""" nếu số trong ảnh không phải số nguyên tố.""",Link
+2,"Bối cảnh của vấn đề:
+Trong thời đại thông tin hiện nay, người dùng phải tiếp nhận một lượng lớn tin tức mỗi ngày từ nhiều nguồn khác nhau. Việc tự động phân loại các đoạn tin tức theo chủ đề giúp hệ thống quản lý nội dung hiệu quả hơn, đồng thời hỗ trợ người dùng tìm kiếm, lọc, và tiếp cận thông tin theo lĩnh vực quan tâm. Đây là một bài toán điển hình trong lĩnh vực xử lý ngôn ngữ tự nhiên (NLP), có thể áp dụng trong các hệ thống báo chí điện tử, nền tảng mạng xã hội, hay công cụ tổng hợp tin tức.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một ứng dụng có khả năng phân loại đoạn văn bản tiếng Anh mô tả nội dung một bản tin vào đúng nhóm chủ đề tương ứng.
+Ứng dụng cần dự đoán chính xác chủ đề chính của đoạn tin tức dựa trên nội dung ngữ nghĩa.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một đoạn văn bản ngắn bằng tiếng Anh, có nội dung mô tả một bản tin, 
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+Một nhãn chủ đề duy nhất cho mỗi đoạn tin tức đầu vào.
+Các nhãn thuộc tập sau: 'Marketplace', 'Recreation', 'Technology', 'Politics', 'Religion'",Link
+3,"Bối cảnh của vấn đề:
+Đây là một nhiệm vụ hồi quy. Mục tiêu là dự đoán giá trị trung bình của nhà ở các quận của California bằng cách sử dụng các đặc trưng từ cuộc điều tra dân số năm 1990, chẳng hạn như thu nhập trung bình, tuổi trung bình của nhà ở, tổng số phòng, v.v. ()
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một hệ thống có khả năng nhận đầu vào là một list các features của khu vực có liên quan đến giá trung bình của nhà ở và đầu ra hệ thống là phân loại khu vực đó thuộc nhóm “rẻ”, “trung bình” hay “đắt” để dễ trực quan hóa hoặc định hướng chính sách
+Mô hình cần xử lý đầu vào là 1 list các features liên quan đến giá trung bình của nhà ở
+Đầu ra là nhãn của nhà ở khu vực đấy thuộc về
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một file test.csv. Mỗi hàng là features cho từng task bao gồm các cột:
+
+MedInc: Thu nhập trung vị của người dân sống trong khu vực (block)
+HouseAge: Tuổi trung vị của các căn nhà trong khu vực
+AveRooms: Số phòng trung bình của các căn nhà trong khu vực
+AveBedrms: Số phòng ngủ trung bình của các căn nhà trong khu vực
+Population: Số người sinh sống trong khu vực
+AveOccup: Số người trung bình sống chung trong một hộ (dưới cùng một mái nhà)
+Latitude: Vĩ độ địa lý
+Longitude: Kinh độ địa lý
+ID: id của task
+ 
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi task
+có các cột:
+ID: id của task
+MedHouseVal: nhóm  nhà ở khu vực đó thuộc về
+
+Các nhóm có thể là:
+low: nhóm ""rẻ"" có giá trung bình < 1
+medium: nhóm ""rẻ"" có 1 <= giá trung bình < 2.5
+high: nhóm ""rẻ"" có giá trung bình >= 2.5
+
+",Link
+4,"Bối cảnh của vấn đề:
+Điều quan trọng là các công ty thẻ tín dụng có thể nhận ra các giao dịch thẻ tín dụng gian lận để khách hàng không phải trả tiền cho những mặt hàng mà họ không mua. Một vấn đề của task này là dữ liệu training khá là ít cho giao dịch gian lận gây vấn đề mất cân bằng nhãn dữ liệu.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một hệ thống có khả năng nhận đầu vào là một list các features liên quan đến sự gian lận của giao dịch và đầu ra hệ thống là phân loại giao dịch cụ thể đó có gian lận hay không
+Mô hình cần xử lý đầu vào là 1 list các feature liên quan đến gian lận của giao dịch
+Đầu ra là nhãn của giao dịch đó thuộc về
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một file test.csv. Mỗi hàng là features cho từng task bao gồm các cột:
+28 đặc trưng V1, V2, … V28 là các thành phần chính thu được từ PCA (Không được công bố cụ thể);  hai đặc trưng không được biến đổi bằng PCA là 'Time' và 'Amount'. Đặc trưng 'Time' thể hiện số giây đã trôi qua giữa mỗi giao dịch và giao dịch đầu tiên trong tập dữ liệu. Đặc trưng 'Amount' là số tiền của giao dịch, đặc trưng này có thể được sử dụng cho học tập nhạy cảm với chi phí phụ thuộc vào ví dụ và cuối cùng là ID: id của task
+ 
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi task
+có các cột:
+ID: id của task
+class: 1 nếu là giao dịch gian lận, 0 với trường hợp ngược lại
+",Link
+5,"Bối cảnh của vấn đề:
+Trong nhiều ứng dụng thực tế như tổng hợp nội dung hình ảnh, phân loại album, hay trích xuất đặc trưng nội dung cho ảnh tổ hợp, cần xác định chủ đề chính của một ảnh ghép từ nhiều ảnh con. Bài toán này đòi hỏi ứng dụng không chỉ nhận diện được nội dung của từng ảnh con, mà còn cần xác định chủ đề chiếm ưu thế trong toàn bộ ảnh tổng thể.
+
+Yêu cầu cụ thể cần đạt được:
+Mỗi đầu vào là một ảnh tổ hợp, ghép từ 9 ảnh màu nhỏ (3x3).
+Nhiệm vụ của ứng dụng là:
+Xác định chủ đề chiếm số lượng nhiều nhất trong 9 ảnh con.
+Trường hợp có nhiều chủ đề xuất hiện với tần suất bằng nhau, có thể chọn một chủ đề bất kỳ trong số đó làm kết quả.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một thư mục có tên là ""images"" chứa các ảnh màu RGB (288x288), được ghép từ 9 ảnh RGB con (32x32) (3 hàng × 3 cột).
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi ảnh
+có các cột:
+file_name: tên file ảnh
+prediction: nhãn của ảnh. 
+nhãn của ảnh là một nhãn duy nhất đại diện cho chủ đề xuất hiện nhiều nhất trong 9 ảnh con.
+Các chủ đề sau nằm trong danh sách sau:
+       ['forest', 'orchid', 'spider', 'fox', 'caterpillar', 'crocodile',
+       'whale', 'road', 'motorcycle', 'tiger', 'woman', 'orange',
+       'elephant', 'otter', 'flatfish', 'cup', 'sea', 'mountain', 'cloud',
+       'willow_tree', 'rabbit', 'couch', 'maple_tree', 'wardrobe',
+       'mushroom', 'plain', 'telephone', 'shrew', 'bowl', 'tractor',
+       'camel', 'bus', 'cattle', 'house', 'cockroach', 'lawn_mower',
+       'oak_tree', 'apple', 'bicycle', 'beetle', 'palm_tree', 'sunflower',
+       'poppy', 'keyboard', 'porcupine', 'snake', 'can', 'pear', 'shark',
+       'chimpanzee', 'hamster', 'train', 'cra', 'bear', 'sweet_pepper',
+       'pine_tree', 'bed', 'tank', 'beaver', 'bridge', 'girl',
+       'skyscraper', 'wolf', 'raccoon', 'rose', 'worm', 'table',
+       'pickup_truck', 'turtle', 'lizard', 'leopard', 'streetcar',
+       'rocket', 'man', 'tulip', 'lamp', 'seal', 'lion', 'butterfly',
+       'kangaroo', 'television', 'ray', 'chair', 'skunk', 'trout',
+       'possum', 'mouse']",Link
