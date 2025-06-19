@@ -24,6 +24,6 @@ def fetching_description_from_huggingface(url, timeout = 30):
     processed_text = re.sub(r'\n+', '\n', processed_raw_text)
     return processed_text
   except requests.exceptions.Timeout:
-    return f"Request timed out after {timeout} seconds."
-  except Exception as e:
-    return f"An error occurred: {e}"
+    raise TimeoutError(f"Request to {url} timed out after {timeout} seconds.")
+  except requests.exceptions.RequestException as e:
+    raise ConnectionError(f"Failed to fetch from {url}: {str(e)}")
