@@ -2,7 +2,18 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-def fetching_description_from_huggingface(url, timeout = 30):
+def fetching_description_from_huggingface(url: str, timeout: int = 30) -> str:
+  """
+  A dedicated tool for crawling model description from Hugging Face.
+
+  Parameters:
+    url (str): The url pointing to the target website.
+    timeout (int): The timeout limit for getting response from the website.
+
+  Returns:
+    A string of raw content from the Hugging Face model description card.
+  """
+
   headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
