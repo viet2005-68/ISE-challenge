@@ -2,9 +2,6 @@ import pandas as pd
 from typing import Dict, Any
 
 def column_parser(path: str, sample_count: int) -> Dict[str, Any]:
-    # path là đường dẫn file
-    # sample_count là số sample rows muốn lấy ra
-
     """
     Parse the columns and some sample rows of a csv file.
 
