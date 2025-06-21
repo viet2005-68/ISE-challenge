@@ -1,0 +1,154 @@
+STT,Task,Validation data
+1,"Bối cảnh của vấn đề:
+Nhận dạng chữ viết tay là một bài toán cơ bản trong lĩnh vực học máy và xử lý ảnh, với nhiều ứng dụng thực tiễn như nhận dạng chữ số trên phiếu khảo sát, hóa đơn hay bài thi tự động. Sau khi nhận dạng được chữ viết tay chúng ta có thể mở rộng nó làm những tác vụ phức tạp phía sau một cách tự động.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một hệ thống có khả năng nhận diện chữ số viết tay từ ảnh.
+Đầu vào là ảnh chứa một chữ số viết tay.
+Đầu ra là chữ viết tay hiển thi trong ảnh.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một thư mục có tên là ""images"" chứa các ảnh RGB có kích thước 224 x 224.
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi ảnh
+có các cột:
+file_name: tên file ảnh
+prediction: nhãn của ảnh là chữ số xuất hiện trong ảnh. Số xuất hiện trong ảnh có giá trị từ 0 đến 9.",
+2,"Bối cảnh của vấn đề:
+Nhận dạng chữ viết tay là một bài toán cơ bản trong lĩnh vực học máy và xử lý ảnh, với nhiều ứng dụng thực tiễn như nhận dạng chữ số trên phiếu khảo sát, hóa đơn hay bài thi tự động. Sau khi nhận dạng được chữ viết tay chúng ta có thể mở rộng nó làm những tác vụ phức tạp phía sau một cách tự động.
+
+Yêu cầu cụ thể cần đạt được:
+Mỗi đầu vào là một ảnh tổ hợp, ghép từ n ảnh trắng đen nhỏ theo hàng ngang. Mỗi ảnh đen trắng con là 1 chữ số viết tay của người có giá trị từ 0 đến 9.
+Nhiệm vụ của ứng dụng là:
+Tính toán tích của các số xuất hiện trong ảnh.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một thư mục có tên là ""images"" chứa các ảnh đen trắng (28 *n x 28), được ghép từ n ảnh đen trắng con (28x28)
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi ảnh
+có các cột:
+file_name: tên file ảnh
+prediction: nhãn của ảnh là tích của các số xuất hiện trong ảnh",
+3,"Bối cảnh của vấn đề:
+Trong các bài báo khoa học, mỗi tác giả thường khai báo tên cơ quan mà họ trực thuộc. Tuy nhiên, cùng một cơ quan có thể được viết theo nhiều cách khác nhau, ví dụ: ""ĐH Bách Khoa Hà Nội"", ""Trường Đại học Bách khoa, ĐHQGHN"" hay ""Hanoi University of Science and Technology"". Điều này gây khó khăn trong việc thống kê, phân tích và xác định bài báo thuộc về cơ quan nào. Do đó, cần một hệ thống có khả năng chuẩn hóa các tên cơ quan và xác định cơ quan đại diện chính của bài báo.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một ứng dụng có khả năng:
+Chuẩn hóa tên cơ quan từ danh sách các cơ quan được liệt kê theo từng tác giả (có thể viết khác nhau).
+Xác định cơ quan chuẩn hóa đại diện cho bài báo.
+
+Danh sách đầu vào là một chuỗi văn bản, các cơ quan phân tách bằng dấu chấm phẩy (;).
+Ứng dụng cần xử lý để gom các cơ quan có tên khác nhau nhưng thực chất là cùng một đơn vị.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một file test.csv, các dòng là các example có các cột 
+ID: Id của example
+Text: là một chuỗi văn bản, ví dụ:
+""ĐH Bách Khoa Hà Nội; Trường ĐH Bách khoa Hà Nội; Hanoi University of Science and Technology; Viện Toán Ứng dụng""
+
+Mỗi phần là tên một cơ quan theo cách tác giả ghi nhận, có thể khác nhau về ngôn ngữ, cách viết tắt, cách trình bày.
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File ouput.csv các dòng là các dự đoán cho từng example,
+gồm 2 cột: 
+ID: id của example
+prediction: dự đoán của ứng dụng là một chuỗi văn bản là tên cơ quan đã được chuẩn hóa của bài báo được sắp xếp từ A đến Z, được phân tách bằng ký tự "";"".
+ví dụ: HUS;IS
+
+smp: School of Medicine and Pharmacy
+ueb: University of Economics and Business
+ussh: University of Social Sciences and Humanities
+hus: University of Science
+hsb: Hanoi School of Business
+law: School of Law
+ulis: University of Languages and International Studies
+vju: Vietnam Japan University
+uet: University of Engineering and Technology
+ued: University of Education
+is: International School
+iti: Information Technology Institute
+other: Others",
+4,"Bối cảnh của vấn đề:
+Việc tự động tạo mô tả cho hình ảnh giúp cải thiện khả năng truy cập nội dung số, hỗ trợ người khiếm thị, đồng thời tăng cường hiệu quả quản lý và tìm kiếm hình ảnh trên các nền tảng trực tuyến. Mô tả hình ảnh bằng tiếng Việt còn góp phần phát triển các ứng dụng trí tuệ nhân tạo phù hợp với ngôn ngữ và văn hóa Việt Nam, giúp người dùng dễ dàng hiểu nội dung hình ảnh thông qua câu văn tự nhiên.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một ứng dụng có khả năng tạo ra câu mô tả ngắn gọn, rõ ràng và đầy đủ ý nghĩa về nội dung chính của hình ảnh đầu vào, sử dụng tiếng Việt.
+Đầu vào là một hình ảnh màu, đầu ra là một câu văn mô tả bằng tiếng Việt.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một thư mục có tên là ""images"" chứa các ảnh màu (RGB) với kích thước tùy chọn
+Ảnh có thể chứa cảnh vật, con người, động vật hoặc các đối tượng khác.
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi ảnh
+có các cột:
+file_name: tên file ảnh
+prediction: một câu văn tiếng Việt mô tả nội dung chính của hình ảnh.",
+5,"Bối cảnh của vấn đề:
+Trong thời đại số, các nền tảng xem phim và mạng xã hội thu thập được hàng triệu bình luận từ người dùng. Việc tự động phân loại cảm xúc của các bình luận này giúp hệ thống hiểu rõ phản ứng của khán giả đối với phim, hỗ trợ đề xuất nội dung, sàng lọc bình luận tiêu cực hoặc phân tích xu hướng dư luận. Bài toán phân loại cảm xúc văn bản là một trong những ứng dụng phổ biến của xử lý ngôn ngữ tự nhiên (NLP), đặc biệt hữu ích trong tiếng Việt, nơi dữ liệu phi cấu trúc ngày càng tăng.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một ứng dụng có khả năng phân loại cảm xúc của câu bình luận phim viết bằng tiếng Việt.
+Ứng dụng cần đọc đầu vào là một câu bình luận và dự đoán xem câu đó mang cảm xúc gì.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một file test.csv, các dòng là các example có các cột 
+ID: Id của example
+text: Một câu văn bằng tiếng Việt, ví dụ: ""Phim hay quá, cảm động vô cùng!""
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File ouput.csv các dòng là các dự đoán cho từng example,
+gồm 2 cột: 
+ID: id của example
+prediction: Một nhãn cảm xúc tương ứng với câu đầu vào. 
+Tập nhãn có thể bao gồm:
+""tích cực""
+""tiêu cực""",
+6,"Bối cảnh của vấn đề:
+Trong phát triển phần mềm, việc tự động hoàn thiện các đoạn mã nguồn còn thiếu hoặc chưa hoàn chỉnh giúp tăng tốc quá trình lập trình, giảm thiểu lỗi và hỗ trợ các lập trình viên đặc biệt khi làm việc với mã phức tạp hoặc mới. Bài toán hoàn thiện function còn trống trong đoạn mã nguồn là một ứng dụng của trí tuệ nhân tạo và học máy, giúp dự đoán và tạo ra phần mã cần thiết dựa trên ngữ cảnh xung quanh trong đoạn code hiện tại.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một hệ thống có khả năng nhận đầu vào là một đoạn mã nguồn có phần function bị để trống (chưa viết hoặc chỉ có khai báo) và tự động hoàn thiện phần nội dung cho function đó sao cho đúng chức năng dự kiến.
+Mô hình cần xử lý đoạn code viết bằng ngôn ngữ lập trình Python
+Đầu ra là đoạn mã hoàn chỉnh thay thế cho phần function trống trong đoạn code đầu vào.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một file test.csv, các dòng là các example có các cột 
+ID: Id của example
+text: Một class chưa có một method chưa được hoàn thiện. Ví dụ: class Calculator:\n    def add(self, a, b):\n        <FILL_ME>""
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File ouput.csv các dòng là các dự đoán cho từng example,
+gồm 2 cột: 
+ID: id của example
+prediction: Thân method chưa được hoàn thiện của Class  Ví dụ đầu ra chấp nhận với ví dụ trên là: return a + b",
+10,"Bối cảnh của vấn đề:
+Trong nhiều ứng dụng như quản lý hình ảnh, phát triển trò chơi giáo dục, hoặc xây dựng các hệ thống nhận dạng đối tượng tự động, khả năng xác định loại động vật xuất hiện trong ảnh là rất quan trọng. Bài toán nhận dạng động vật từ ảnh màu nhỏ giúp phát triển các mô hình học sâu có khả năng học đặc trưng hình ảnh ở độ phân giải thấp, đồng thời có thể ứng dụng trong các hệ thống nhúng hoặc thiết bị hạn chế tài nguyên tính toán.
+
+Yêu cầu cụ thể cần đạt được:
+Xây dựng một ứng dụng có khả năng xác định đúng loại động vật có trong ảnh màu nhỏ. Ứng dụng cần xử lý ảnh đầu vào là ảnh màu RGB với kích thước cố định.
+Đầu ra của ứng dụng là tên của động vật có trong ảnh, viết bằng tiếng Việt.
+
+Định dạng dữ liệu đầu vào cho bài toán tổng thể:
+Một thư mục có tên là ""images"" chứa các ảnh màu RGB với kích thước 32x32 pixel.
+Mỗi ảnh chứa hình ảnh một động vật duy nhất.
+
+Định dạng kết quả đầu ra mong muốn cho bài toán tổng thể:
+File output.csv mỗi hàng là kết quả dự đoán mỗi ảnh
+có các cột:
+file_name: tên file ảnh
+prediction: nhãn của ảnh
+Là một nhãn văn bản duy nhất, viết bằng tiếng Việt, biểu thị tên của động vật trong ảnh.
+Các nhãn có thể là: 
+    ""máy bay"",
+    ""ô tô"",
+    ""chim"",
+    ""mèo"",
+    ""nai"",
+    ""chó"",
+    ""ếch"",
+    ""ngựa"",
+    ""tàu thủy"",
+    ""xe tải""",

@@ -1,0 +1,19 @@
+STT,Tên Model,Link model
+1,Nhận diện ảnh chữ viết tay,https://huggingface.co/thanhtlx/image_classification_01
+2,Phân loại văn bản thành các topic,https://huggingface.co/thanhtlx/text_classification_1
+3,Dự đoán giá trung bình nhà ở các quận Cali,https://huggingface.co/zhaospei/Model_3
+4,Dự đoán giá trung bình nhà ở các quận Cali,https://huggingface.co/zhaospei/Model_2
+5,Phân loại gian lận thẻ tín dụng,https://huggingface.co/zhaospei/Model_4
+6,Phân loại hình ảnh,https://huggingface.co/zhaospei/Model_7
+7,"Phân loại hình ảnh thành 100 lớp đối tượng chi tiết (fine-grained),",https://huggingface.co/zhaospei/Model_6
+8,Mô hình tương quan giữa hình ảnh và text,https://huggingface.co/zhaospei/Model_10
+9,Mô hình dự đoán chữ số viết tay,https://huggingface.co/zhaospei/Model_11
+10,Mô hình Phân loại Ảnh ,https://huggingface.co/zhaospei/Model_12
+11,Mô hình dịch song ngữ tiếng anh và tiếng việt,https://huggingface.co/zhaospei/Model_13
+12,Mô hình sinh mô tả cho hình ảnh,https://huggingface.co/zhaospei/Model_14
+13,Mô hình nhận dạng chữ viết tay ,https://huggingface.co/zhaospei/Model_15
+14, Mô hình phân loại hình ảnh,https://huggingface.co/zhaospei/Model_16
+15,Mô hình multi-task (làm được nhiều tác vụ),https://huggingface.co/zhaospei/Model_17
+16,Mô hình nhận dạng Công Thức Toán Học Viết Tay,https://huggingface.co/zhaospei/Model_18
+17,Mô hình ngôn ngữ lớn dành cho mã nguồn,https://huggingface.co/zhaospei/Model_19
+18,Mô hình phân loại văn bản,https://huggingface.co/thanhtlx/text_classification_2
